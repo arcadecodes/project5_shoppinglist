@@ -1,0 +1,213 @@
+html {
+    margin: 0;
+    padding: 0;
+    background:#661141;
+    background: url(emma-matthews-digital-content-production-8K62atzbulQ-unsplash.jpg) no-repeat center fixed;
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #75AF96;
+}
+
+.main {
+    align-self: center;
+    border-style: double;
+    border-width: 10px;
+    border-color: #75AF96; 
+    padding: 100px; 
+    background-color: rgb(0, 58, 35, 0.5);
+    margin: 200px;
+    border-radius: 25px;
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 50px;
+    
+}
+
+h6 {
+    padding: 0px;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-self: baseline;
+    justify-items: center;
+    margin-top: 50px;
+    color: white;
+}
+
+/* Container for input fields to add new list items */
+.listInput {
+    padding-top: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#inputArea {
+    position: relative;
+    width: 100%;
+}
+
+.listInput #userinput {
+    background: #74AE97;
+    color: white; 
+    font-size: 20px;
+    font-family:'Swanky and Moo Moo', cursive;
+    border: 2px solid #003A23;
+    height: 50px; 
+    width: 200px;
+    border-radius: 10px 10px 10px 10px; 
+    text-align: center;
+    transition: all .2s;
+
+}
+
+.listInput #userinput:hover {
+    background: #B8E297
+}
+
+.listInput #userinput:focus {
+    /* Text field focus effects */
+    box-shadow: none;
+    outline: none;
+    background: #B8E297
+}
+
+/* Custom buttons for textfield and list item buttons (> & X)*/
+.custBtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: transparent;
+    color: black;
+    width: 40px;
+    height: 60px;
+    border: 3px solid transparent;
+    border-left: 0px;
+    border-radius: 0 10px 10px 0;
+    transition: all .2s;
+}
+    
+.custBtn:hover {
+  color: #A6BFD1;
+  cursor: pointer;
+}
+
+.custBtn:focus {
+  outline: none;
+  
+}
+/* End buttons */
+.mainList {
+    padding-top: 20px;
+}
+
+ /* List items */
+.mainList .listItem {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+   margin-bottom: 5px;
+   font-size: 26px;
+   background: #B8E297;
+   border: 2px solid #6F808C;
+   color: white;
+   height: 60px;
+   width: 100%;
+   list-style: none;
+   transition: all .2s;
+ }
+  
+.mainList .listItem:hover { /* List items hover effect */
+    background: #EBF7FF;
+    cursor: pointer;
+}
+
+.mainList .listItem:not(:first-child):not(:last-child) {
+    border-top: 1px solid #6F808C;
+    border-bottom: 1px solid #6F808C;
+  }
+  
+.mainList .listItem:nth-child(2) {
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid #6F808C;
+  }
+  
+.mainList .listItem:nth-last-child(1) {
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid #6F808C;
+  }
+  
+.done {
+    text-decoration: line-through;
+  }
+  
+    /* End list items*/
+  /* End container for list items */
+  
+  @media screen and (max-width: 760px) {
+    .container {
+      height: 100%;
+    }
+    .header {
+      margin-top: 65px;
+    }
+    #inputArea {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      z-index: 10;
+    }
+    .listInput #userInput {
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      box-shadow: 0px 0px 10px 1px #384046;
+    }
+    .mainList .listItem:hover {
+    background: #CAE9FF;
+    }
+  
+    .mainList .listItem {
+      border-radius: 5px;
+    }
+    
+    .mainList .listItem:nth-child(2) {
+      border-radius: 5px;
+    }
+  
+    .mainList .listItem:nth-last-child(1) {
+      border-radius: 5px;
+    }
+  }
+  
+
+ul, li {
+    list-style-type: none;
+    font-size: 30px;
+    font-style: bold;
+    color: white;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding: 12px 16px;
+    transform: translate(0%, -50%);
+  }
+
+.close:hover {background: #bbb;}
+
+button {
+    font-family:'Swanky and Moo Moo', cursive;
+    font-size: large;
+}
